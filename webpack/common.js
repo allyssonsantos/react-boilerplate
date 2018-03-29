@@ -26,7 +26,6 @@ module.exports = {
   standardPreLoader: {
     test: /\.js$/,
     enforce: 'pre',
-    exclude: /node_modules/,
     include: paths.src,
     use: {
       loader: 'semistandard-loader',
@@ -38,14 +37,12 @@ module.exports = {
 
   jsLoader: {
     test: /\.js$/,
-    exclude: /node_modules/,
     include: paths.src,
     use: 'babel-loader'
   },
 
   cssLoader: {
     test: /\.css$/,
-    exclude: /node_modules/,
     include: paths.src,
     use: ['style-loader', 'css-loader']
   },
