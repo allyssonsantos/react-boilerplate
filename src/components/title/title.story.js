@@ -19,13 +19,6 @@ stories.add('Title with async/await', () => {
       };
     }
 
-    getTitle() {
-      return new Promise((resolve, reject) => {
-        this.timer = setTimeout(() => {
-          resolve('My app with async / await!');
-        }, 2000);
-      });
-    }
 
     async componentDidMount() {
       this.setState({
@@ -35,6 +28,14 @@ stories.add('Title with async/await', () => {
 
     componentWillUnmount() {
       clearTimeout(this.timer);
+    }
+
+    getTitle() {
+      return new Promise((resolve) => {
+        this.timer = setTimeout(() => {
+          resolve('My app with async / await!');
+        }, 2000);
+      });
     }
 
     render() {
