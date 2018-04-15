@@ -1,4 +1,4 @@
-'use strict';
+
 
 import React from 'react';
 import { render } from 'react-dom';
@@ -10,7 +10,7 @@ const renderApp = (NextApp) => {
     <AppContainer>
       <NextApp />
     </AppContainer>,
-    document.querySelector('[data-js="app"]')
+    document.querySelector('[data-js="app"]'),
   );
 };
 

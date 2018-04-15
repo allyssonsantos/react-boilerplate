@@ -28,7 +28,7 @@ module.exports = {
     enforce: 'pre',
     include: paths.src,
     use: {
-      loader: 'semistandard-loader',
+      loader: 'eslint-loader',
       options: {
         parser: 'babel-eslint'
       }

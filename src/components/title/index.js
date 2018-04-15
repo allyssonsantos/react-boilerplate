@@ -1,4 +1,4 @@
-'use strict';
+
 
 import React from 'react';
 import PropTypes from 'prop-types';
@@ -10,7 +10,7 @@ const Title = ({ children }) => (
 );
 
 Title.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };
 
 export default Title;
