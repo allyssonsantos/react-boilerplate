@@ -1,8 +1,6 @@
-
-
-import { storiesOf } from '@kadira/storybook';
+import { storiesOf } from '@storybook/react';
 import React, { Component } from 'react';
-import Title from './index';
+import Title from '.';
 
 const stories = storiesOf('Title', module);
 
