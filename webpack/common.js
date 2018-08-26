@@ -26,13 +26,12 @@ module.exports = {
   jsLoader: {
     test: /\.jsx?$/,
     include: paths.src,
-    use: {
+    use: ['react-hot-loader/webpack', {
       loader: 'babel-loader',
       options: {
         babelrc: false,
         presets: [['env', { modules: false }], 'stage-0', 'react'],
         plugins: [
-          'react-hot-loader/babel',
           ['transform-runtime', {
             helpers: false,
             polyfill: false,
