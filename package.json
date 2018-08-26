@@ -3,12 +3,11 @@
     "dev": "webpack-dashboard -- node server.js",
     "test": "jest --coverage",
     "test:watch": "yarn test -- --watch",
-    "lint": "eslint --ext js,jsx ./src/**/*.js",
+    "lint": "eslint --ext js,jsx ./src",
     "lint:fix": "yarn lint --fix",
     "build": "cross-env NODE_ENV=production webpack --progress --config webpack/prod.config -p",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "update-packages": "node ./scripts/update.js"
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
     "babel-core": "^6.22.1",

@@ -28,9 +28,12 @@ class App extends Component {
   }
 
   render() {
+    const { title } = this.state;
     return (
       <div>
-        <this.state.Component>{this.state.title}</this.state.Component>
+        <this.state.Component>
+          {title}
+        </this.state.Component>
       </div>
     );
   }

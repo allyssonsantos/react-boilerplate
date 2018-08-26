@@ -37,9 +37,10 @@ stories.add('Title with async/await', () => {
     }
 
     render() {
+      const { title } = this.state;
       return (
         <div>
-          <Title>{this.state.title}</Title>
+          <Title>{title}</Title>
         </div>
       );
     }
